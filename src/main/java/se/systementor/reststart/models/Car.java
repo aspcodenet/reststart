@@ -3,6 +3,7 @@ package se.systementor.reststart.models;
 import java.time.LocalDateTime;
 
 public class Car {
+    private int id;
     private LocalDateTime created;
     private LocalDateTime lastModified;
     private LocalDateTime auctionStarting;
@@ -92,5 +93,13 @@ public class Car {
 
     public void setAuctionEnding(LocalDateTime auctionEnding) {
         this.auctionEnding = auctionEnding;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
