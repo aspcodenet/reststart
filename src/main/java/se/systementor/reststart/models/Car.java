@@ -1,6 +1,7 @@
 package se.systementor.reststart.models;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Car {
     private int id;
@@ -14,6 +15,11 @@ public class Car {
     private int year;
     private int mil;
     private int startingPrice;
+
+    private ArrayList<Bid> bids = new ArrayList<>();
+    private void addBid(Bid bid){
+        bids.add(bid);
+    }
 
     public LocalDateTime getCreated() {
         return created;
